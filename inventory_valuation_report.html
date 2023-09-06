@@ -218,7 +218,7 @@
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="inventory.html" class="nav-link active">
+			  <a href="inventory.html" class="nav-link">
 				<i class="nav-icon fas fa-warehouse"></i>
 				<p>
 				  Inventory
@@ -292,8 +292,8 @@
 				</p>
 			  </a>
 			</li>
-			<li class="nav-item">
-				<a href="" class="nav-link">
+			<li class="nav-item menu-open">
+				<a href="" class="nav-link active">
 				<i class="nav-icon fas fa-copy"></i>
 				  <p>
 					Reports
@@ -302,7 +302,7 @@
 				</a>
 				<ul class="nav nav-treeview">
 				  <li class="nav-item">
-					<a href="inventory_valuation_report.html" class="nav-link">
+					<a href="inventory_valuation_report.html" class="nav-link active">
 					  <i class="far fa-circle nav-icon"></i>
 					  <p>Inventory Valuation and Cost</p>
 					</a>
@@ -366,12 +366,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Inventory</h1>
+            <h1 class="m-0">Inventory Valuation and Cost Report</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Inventory</li>
+              <li class="breadcrumb-item active">Inventory Valuation and Cost Report</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -386,233 +386,168 @@
         <!-- Main row -->
 		<section>
 			<div class="d-flex">
-				<div class="card" style="flex:2; margin-right:24px;">
+				<div class="card" style="flex:2; margin-right:24px;margin-bottom:32px">
 					<div class="card-header">
-					  <h3 class="card-title">LIST OF ITEMS</h3>
+					  <h3 class="card-title"><p class="text-right"><strong>Date:</strong> September 15, 2023</p></h3>
 	  
 					  <div class="card-tools">
-						<div class="d-flex float-right" style="margin-left:24px!important;">
-							<div class="d-flex align-items-center input-group input-group-sm" style="margin-right:16px;">
-								<span style="margin-right:7px;">Category</span>
-								<select name="" id="" class="form-control input-sm">
-									<option value="tools">Tools</option>
-									<option value="Equipment">Equipment</option>
-									<option value="Raw Materials">Raw Materials</option>
-								</select>
-							</div>
-							<div class="d-flex align-items-center input-group input-group-sm">
-								<span style="margin-right:7px;">Measurement</span>
-								<select name="" id="" class="form-control input-sm">
-									<option value="Kilograms">Kilograms</option>
-									<option value="Liters">Liters</option>
-									<option value="Meters">Meters</option>
-									<option value="Inches">Inches</option>
-								</select>
-							</div>
-						  </div>
-						<div class="input-group input-group-sm" style="width: 150px;">
-						  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-						  <div class="input-group-append">
-							<button type="submit" class="btn btn-default">
-							  <i class="fas fa-search"></i>
-							</button>
-						  </div>
-						</div>
 					  </div>
 					</div>
 					<!-- /.card-header -->
 					<div class="card-body table-responsive p-0">
-					  <table class="table table-hover text-nowrap">
-						<thead>
-						  <tr>
-							<th>SKU</th>
-							<th>Item Name</th>
-							<th>Category</th>
-							<th>Measurement</th>
-							<th>Safety Stock</th>
-							<th>Reorder Point</th>
-						  </tr>
-						</thead>
-						<tbody>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
 						
-						</tbody>
-					  </table>
+        
+							<!-- Report Table -->
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>Item Name</th>
+										<th>Quantity</th>
+										<th>Unit Cost ($) </th>
+										<th>Total Value ($) </th>
+										<th>Cost Category</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- Dummy Data -->
+									<tr>
+										<td>Product A</td>
+										<td>100</td>
+										<td>10.00</td>
+										<td>1,000.00</td>
+										<td>Direct Costs</td>
+									</tr>
+									<tr>
+										<td>Product B</td>
+										<td>150</td>
+										<td>8.50</td>
+										<td>1,275.00</td>
+										<td>Direct Costs</td>
+									</tr>
+									<tr>
+										<td>Product C</td>
+										<td>75</td>
+										<td>15.75</td>
+										<td>1,181.25</td>
+										<td>Direct Costs</td>
+									</tr>
+									<tr>
+										<td>Product D</td>
+										<td>200</td>
+										<td>12.00</td>
+										<td>2,400.00</td>
+										<td>Direct Costs</td>
+									</tr>
+									<tr>
+										<td>Product E</td>
+										<td>50</td>
+										<td>20.25</td>
+										<td>1,012.50</td>
+										<td>Direct Costs</td>
+									</tr>
+									<!-- Add more dummy data rows here -->
+								</tbody>
+							</table>
+							
+							<!-- Total Costs and Average Cost per Unit -->
+							<div class="row" style="padding:24px;">
+								<div class="col-md-6">
+									<h5>Total Direct Costs:</h5>
+									<p>6,868.75</p>
+									<h5>Total Indirect Costs:</h5>
+									<p>900.00</p>
+								</div>
+								<div class="col-md-6">
+									<h5>Total Cost of Goods Sold (COGS):</h5>
+									<p>7,768.75</p>
+									<h5>Average Cost per Unit:</h5>
+									<p>11.00</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- /.card-body -->
 				</div>
-				<div class="card" style="flex:1">
+
+				<div class="card" style="flex:2; margin-right:24px;margin-bottom:32px">
 					<div class="card-header">
-					  <h3 class="card-title">ITEM DETAILS</h3>
+					  <h3 class="card-title"><p class="text-right"><strong>Date:</strong> September 30, 2023</p></h3>
+	  
+					  <div class="card-tools">
+					  </div>
 					</div>
 					<!-- /.card-header -->
 					<div class="card-body table-responsive p-0">
-					  <div class="d-flex flex-column">
-						<img src="product.jpg" alt="">
-						<div class="d-flex" style="padding:16px;width:100%">
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Name</b>
-									<span style="font-size:16px;">Chain Saw</span>
-								</div>
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Brand</b>
-									<span style="font-size:16px;">STIHL</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Manufacturer</b>
-									<span style="font-size:16px;">STIHL Company</span>
-								</div>
-							</div>
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Weight</b>
-									<span style="font-size:16px;">15KG</span>
-								</div>
-								<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-									<b style="font-size:13px">Category</b>
-									<span style="font-size:16px;">Equipment</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Supplier</b>
-									<span style="font-size:16px;">Harrows Industrial Co</span>
-								</div>
-							</div>
-						</div>
-						<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;padding:0px 16px;">
-							<b style="font-size:13px">Item Description</b>
-							<span style="font-size:16px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eos at fugiat corporis odio dolorum blanditiis officia molestiae sit omnis, iusto ad distinctio perspiciatis consequatur facilis magni sapiente dolor modi.</span>
-						</div>
-
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">STOCK DETAILS</b>
-							<div class="d-flex" style="width:100%">
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Lead Time</b>
-										<span style="font-size:16px;">14</span>
-									</div>
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Lead Time </b>
-										<span style="font-size:16px;">23</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Safety Stock</b>
-										<span style="font-size:16px;">250</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Current Stocks</b>
-										<span style="font-size:16px;color:green;font-weight:bold;">123 pcs.</span>
-									</div>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Daily Usage</b>
-										<span style="font-size:16px;">10</span>
-									</div>
-									<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Daily Usage</b>
-										<span style="font-size:16px;">15</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Reorder Point</b>
-										<span style="font-size:16px;">75</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">MOVEMENT HISTORY</b>
+						
+        
+							<!-- Report Table -->
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>Item Name</th>
+										<th>Quantity</th>
+										<th>Unit Cost ($) </th>
+										<th>Total Value ($) </th>
+										<th>Cost Category</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- Dummy Data -->
+									<tr>
+										<td>Product A</td>
+										<td>100</td>
+										<td>10.00</td>
+										<td>1,000.00</td>
+										<td>Direct Costs</td>
+									</tr>
+									<tr>
+										<td>Product B</td>
+										<td>150</td>
+										<td>8.50</td>
+										<td>1,275.00</td>
+										<td>Direct Costs</td>
+									</tr>
+									<tr>
+										<td>Product C</td>
+										<td>75</td>
+										<td>15.75</td>
+										<td>1,181.25</td>
+										<td>Direct Costs</td>
+									</tr>
+									<tr>
+										<td>Product D</td>
+										<td>200</td>
+										<td>12.00</td>
+										<td>2,400.00</td>
+										<td>Direct Costs</td>
+									</tr>
+									<tr>
+										<td>Product E</td>
+										<td>50</td>
+										<td>20.25</td>
+										<td>1,012.50</td>
+										<td>Direct Costs</td>
+									</tr>
+									<!-- Add more dummy data rows here -->
+								</tbody>
+							</table>
 							
+							<!-- Total Costs and Average Cost per Unit -->
+							<div class="row" style="padding:24px;">
+								<div class="col-md-6">
+									<h5>Total Direct Costs:</h5>
+									<p>6,868.75</p>
+									<h5>Total Indirect Costs:</h5>
+									<p>900.00</p>
+								</div>
+								<div class="col-md-6">
+									<h5>Total Cost of Goods Sold (COGS):</h5>
+									<p>7,768.75</p>
+									<h5>Average Cost per Unit:</h5>
+									<p>11.00</p>
+								</div>
+							</div>
 						</div>
-					  </div>
 					</div>
 					<!-- /.card-body -->
 				</div>
@@ -623,6 +558,10 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+
+	
+
+
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

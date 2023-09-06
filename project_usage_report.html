@@ -218,7 +218,7 @@
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="inventory.html" class="nav-link active">
+			  <a href="inventory.html" class="nav-link">
 				<i class="nav-icon fas fa-warehouse"></i>
 				<p>
 				  Inventory
@@ -292,8 +292,8 @@
 				</p>
 			  </a>
 			</li>
-			<li class="nav-item">
-				<a href="" class="nav-link">
+			<li class="nav-item menu-open">
+				<a href="" class="nav-link active">
 				<i class="nav-icon fas fa-copy"></i>
 				  <p>
 					Reports
@@ -321,7 +321,7 @@
 				  </li>
 				 
 				  <li class="nav-item">
-					<a href="project_usage_report.html" class="nav-link">
+					<a href="project_usage_report.html" class="nav-link active">
 					  <i class="far fa-circle nav-icon"></i>
 					  <p>Project Usage and Consumption</p>
 					</a>
@@ -366,12 +366,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Inventory</h1>
+            <h1 class="m-0">Project Usage and Consumption Report</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Inventory</li>
+              <li class="breadcrumb-item active">Project Usage and Consumption Report</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -386,233 +386,76 @@
         <!-- Main row -->
 		<section>
 			<div class="d-flex">
-				<div class="card" style="flex:2; margin-right:24px;">
+				<div class="card" style="flex:2; margin-right:24px;margin-bottom:32px">
 					<div class="card-header">
-					  <h3 class="card-title">LIST OF ITEMS</h3>
 	  
 					  <div class="card-tools">
-						<div class="d-flex float-right" style="margin-left:24px!important;">
-							<div class="d-flex align-items-center input-group input-group-sm" style="margin-right:16px;">
-								<span style="margin-right:7px;">Category</span>
-								<select name="" id="" class="form-control input-sm">
-									<option value="tools">Tools</option>
-									<option value="Equipment">Equipment</option>
-									<option value="Raw Materials">Raw Materials</option>
-								</select>
-							</div>
-							<div class="d-flex align-items-center input-group input-group-sm">
-								<span style="margin-right:7px;">Measurement</span>
-								<select name="" id="" class="form-control input-sm">
-									<option value="Kilograms">Kilograms</option>
-									<option value="Liters">Liters</option>
-									<option value="Meters">Meters</option>
-									<option value="Inches">Inches</option>
-								</select>
-							</div>
-						  </div>
-						<div class="input-group input-group-sm" style="width: 150px;">
-						  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-						  <div class="input-group-append">
-							<button type="submit" class="btn btn-default">
-							  <i class="fas fa-search"></i>
-							</button>
+						<div class="d-flex align-items-center">
+							<div class="input-group input-group-sm" style="width: 200px;margin-right:16px">
+								<label for="">from: </label>
+								<input type="date" name="table_search" class="form-control float-right" placeholder="Search">
+							  </div>
+							  <div class="input-group input-group-sm" style="width: 200px;margin-right:16px">
+								<label for="">to: </label>
+								<input type="date" name="table_search" class="form-control float-right" placeholder="Search">
+							  </div>
 						  </div>
 						</div>
-					  </div>
-					</div>
-					<!-- /.card-header -->
-					<div class="card-body table-responsive p-0">
-					  <table class="table table-hover text-nowrap">
-						<thead>
-						  <tr>
-							<th>SKU</th>
-							<th>Item Name</th>
-							<th>Category</th>
-							<th>Measurement</th>
-							<th>Safety Stock</th>
-							<th>Reorder Point</th>
-						  </tr>
-						</thead>
-						<tbody>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
 						
-						</tbody>
-					  </table>
-					</div>
-					<!-- /.card-body -->
-				</div>
-				<div class="card" style="flex:1">
-					<div class="card-header">
-					  <h3 class="card-title">ITEM DETAILS</h3>
 					</div>
 					<!-- /.card-header -->
-					<div class="card-body table-responsive p-0">
-					  <div class="d-flex flex-column">
-						<img src="product.jpg" alt="">
-						<div class="d-flex" style="padding:16px;width:100%">
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Name</b>
-									<span style="font-size:16px;">Chain Saw</span>
-								</div>
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Brand</b>
-									<span style="font-size:16px;">STIHL</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Manufacturer</b>
-									<span style="font-size:16px;">STIHL Company</span>
-								</div>
-							</div>
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Weight</b>
-									<span style="font-size:16px;">15KG</span>
-								</div>
-								<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-									<b style="font-size:13px">Category</b>
-									<span style="font-size:16px;">Equipment</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Supplier</b>
-									<span style="font-size:16px;">Harrows Industrial Co</span>
-								</div>
-							</div>
-						</div>
-						<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;padding:0px 16px;">
-							<b style="font-size:13px">Item Description</b>
-							<span style="font-size:16px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eos at fugiat corporis odio dolorum blanditiis officia molestiae sit omnis, iusto ad distinctio perspiciatis consequatur facilis magni sapiente dolor modi.</span>
-						</div>
-
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">STOCK DETAILS</b>
-							<div class="d-flex" style="width:100%">
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Lead Time</b>
-										<span style="font-size:16px;">14</span>
-									</div>
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Lead Time </b>
-										<span style="font-size:16px;">23</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Safety Stock</b>
-										<span style="font-size:16px;">250</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Current Stocks</b>
-										<span style="font-size:16px;color:green;font-weight:bold;">123 pcs.</span>
-									</div>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Daily Usage</b>
-										<span style="font-size:16px;">10</span>
-									</div>
-									<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Daily Usage</b>
-										<span style="font-size:16px;">15</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Reorder Point</b>
-										<span style="font-size:16px;">75</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">MOVEMENT HISTORY</b>
+					<div class="card-body table-responsive p-4">
+						<div class="mt-5">
+							<!-- <h1 class="text-center">Project Usage and Consumption Report</h1> -->
 							
+							<!-- Project Information -->
+							<p><strong>Project Name:</strong> Acme Construction Project</p>
+							<p><strong>Project Start Date:</strong> September 1, 2023</p>
+							<p><strong>Project End Date:</strong> December 31, 2023</p>
+							
+							<!-- Report Table -->
+							<div class="table-responsive">
+								<table class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th>Date</th>
+											<th>Resource/Service</th>
+											<th>Description</th>
+											<th>Quantity/Usage</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- Example 1: Labor -->
+										<tr>
+											<td>Sep 5, 2023</td>
+											<td>Labor</td>
+											<td>Worker A</td>
+											<td>8 hours</td>
+										</tr>
+										<!-- Example 2: Materials -->
+										<tr>
+											<td>Sep 5, 2023</td>
+											<td>Materials</td>
+											<td>Cement</td>
+											<td>50 bags</td>
+										</tr>
+										<!-- Example 3: Equipment -->
+										<tr>
+											<td>Sep 10, 2023</td>
+											<td>Equipment</td>
+											<td>Excavator</td>
+											<td>1 day</td>
+										</tr>
+										<!-- Add more examples here -->
+									</tbody>
+								</table>
+							</div>
+							
+							<!-- Total Usage and Consumption -->
+							<p><strong>Total Labor Hours:</strong> 14 hours</p>
+							<p><strong>Total Material Usage (Cement & Steel Bars):</strong> 50 bags / 500 kg</p>
+							<p><strong>Total Equipment Usage (Excavator):</strong> 1 day</p>
 						</div>
-					  </div>
 					</div>
 					<!-- /.card-body -->
 				</div>
@@ -623,6 +466,10 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+
+	
+
+
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

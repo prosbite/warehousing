@@ -218,15 +218,15 @@
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="inventory.html" class="nav-link active">
+			  <a href="inventory.html" class="nav-link">
 				<i class="nav-icon fas fa-warehouse"></i>
 				<p>
 				  Inventory
 				</p>
 			  </a>
 			</li>
-			<li class="nav-item">
-				<a href="" class="nav-link">
+			<li class="nav-item menu-open">
+				<a href="" class="nav-link active">
 				<i class="nav-icon fas fa-money-bill-wave"></i>
 				  <p>
 					Purchasing
@@ -241,7 +241,7 @@
 					</a>
 				  </li>
 				  <li class="nav-item">
-					<a href="supplier_management.html" class="nav-link">
+					<a href="supplier_management.html" class="nav-link active">
 					  <i class="far fa-circle nav-icon"></i>
 					  <p>Supplier Management</p>
 					</a>
@@ -366,12 +366,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Inventory</h1>
+            <h1 class="m-0">Supplier Management</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Inventory</li>
+              <li class="breadcrumb-item active">Supplier Management</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -388,11 +388,11 @@
 			<div class="d-flex">
 				<div class="card" style="flex:2; margin-right:24px;">
 					<div class="card-header">
-					  <h3 class="card-title">LIST OF ITEMS</h3>
+					  <h3 class="card-title">SUPPLIERS LIST</h3>
 	  
 					  <div class="card-tools">
 						<div class="d-flex float-right" style="margin-left:24px!important;">
-							<div class="d-flex align-items-center input-group input-group-sm" style="margin-right:16px;">
+							<!-- <div class="d-flex align-items-center input-group input-group-sm" style="margin-right:16px;">
 								<span style="margin-right:7px;">Category</span>
 								<select name="" id="" class="form-control input-sm">
 									<option value="tools">Tools</option>
@@ -408,6 +408,9 @@
 									<option value="Meters">Meters</option>
 									<option value="Inches">Inches</option>
 								</select>
+							</div> -->
+							<div class="d-flex align-items-center input-group input-group-sm">
+								<button class="btn btn-success btn-sm" style="width:75px" data-toggle="modal" data-target="#addsupplierDetailsModal"><i class="fa fa-plus"></i> New</button>
 							</div>
 						  </div>
 						<div class="input-group input-group-sm" style="width: 150px;">
@@ -424,195 +427,139 @@
 					<div class="card-body table-responsive p-0">
 					  <table class="table table-hover text-nowrap">
 						<thead>
-						  <tr>
-							<th>SKU</th>
-							<th>Item Name</th>
-							<th>Category</th>
-							<th>Measurement</th>
-							<th>Safety Stock</th>
-							<th>Reorder Point</th>
-						  </tr>
+							<tr>
+								<th>Supplier Name</th>
+								<th>Contact Person</th>
+								<th>Email</th>
+								<th>Phone</th>
+								<th>Address</th>
+								<th>Status</th>
+							</tr>
 						</thead>
 						<tbody>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier A</a></td>
+								<td>John Smith</td>
+								<td>john@example.com</td>
+								<td>(123) 456-7890</td>
+								<td>123 Elm Street, City A</td>
+								<td>Active</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier B</a></td>
+								<td>Jane Doe</td>
+								<td>jane@example.com</td>
+								<td>(456) 789-1234</td>
+								<td>456 Oak Avenue, City B</td>
+								<td>Active</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier C</a></td>
+								<td>Mike Johnson</td>
+								<td>mike@example.com</td>
+								<td>(789) 123-4567</td>
+								<td>789 Maple Road, City C</td>
+								<td>Inactive</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier D</a></td>
+								<td>Susan Brown</td>
+								<td>susan@example.com</td>
+								<td>(234) 567-8901</td>
+								<td>234 Pine Lane, City D</td>
+								<td>Active</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier E</a></td>
+								<td>Robert Wilson</td>
+								<td>robert@example.com</td>
+								<td>(567) 890-1234</td>
+								<td>567 Birch Street, City E</td>
+								<td>Inactive</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier F</a></td>
+								<td>Linda Miller</td>
+								<td>linda@example.com</td>
+								<td>(890) 123-4567</td>
+								<td>890 Cedar Avenue, City F</td>
+								<td>Active</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier G</a></td>
+								<td>David Lee</td>
+								<td>david@example.com</td>
+								<td>(123) 456-7890</td>
+								<td>123 Elm Street, City G</td>
+								<td>Inactive</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier H</a></td>
+								<td>Sarah White</td>
+								<td>sarah@example.com</td>
+								<td>(456) 789-1234</td>
+								<td>456 Oak Avenue, City H</td>
+								<td>Active</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier I</a></td>
+								<td>Michael Davis</td>
+								<td>michael@example.com</td>
+								<td>(789) 123-4567</td>
+								<td>789 Maple Road, City I</td>
+								<td>Inactive</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier J</a></td>
+								<td>Karen Wilson</td>
+								<td>karen@example.com</td>
+								<td>(234) 567-8901</td>
+								<td>234 Pine Lane, City J</td>
+								<td>Active</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier K</a></td>
+								<td>James Smith</td>
+								<td>james@example.com</td>
+								<td>(567) 890-1234</td>
+								<td>567 Birch Street, City K</td>
+								<td>Inactive</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier L</a></td>
+								<td>Emily Johnson</td>
+								<td>emily@example.com</td>
+								<td>(890) 123-4567</td>
+								<td>890 Cedar Avenue, City L</td>
+								<td>Active</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier M</a></td>
+								<td>John Brown</td>
+								<td>johnb@example.com</td>
+								<td>(123) 456-7890</td>
+								<td>123 Elm Street, City M</td>
+								<td>Inactive</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier N</a></td>
+								<td>Mary Smith</td>
+								<td>mary@example.com</td>
+								<td>(456) 789-1234</td>
+								<td>456 Oak Avenue, City N</td>
+								<td>Active</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#supplierDetailsModal">
+								<td><a href="#" data-toggle="modal" data-target="#supplierDetailsModal">Supplier O</a></td>
+								<td>Paul Davis</td>
+								<td>paul@example.com</td>
+								<td>(789) 123-4567</td>
+								<td>789 Maple Road, City O</td>
+								<td>Inactive</td>
+							</tr>
+
 						</tbody>
 					  </table>
-					</div>
-					<!-- /.card-body -->
-				</div>
-				<div class="card" style="flex:1">
-					<div class="card-header">
-					  <h3 class="card-title">ITEM DETAILS</h3>
-					</div>
-					<!-- /.card-header -->
-					<div class="card-body table-responsive p-0">
-					  <div class="d-flex flex-column">
-						<img src="product.jpg" alt="">
-						<div class="d-flex" style="padding:16px;width:100%">
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Name</b>
-									<span style="font-size:16px;">Chain Saw</span>
-								</div>
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Brand</b>
-									<span style="font-size:16px;">STIHL</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Manufacturer</b>
-									<span style="font-size:16px;">STIHL Company</span>
-								</div>
-							</div>
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Weight</b>
-									<span style="font-size:16px;">15KG</span>
-								</div>
-								<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-									<b style="font-size:13px">Category</b>
-									<span style="font-size:16px;">Equipment</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Supplier</b>
-									<span style="font-size:16px;">Harrows Industrial Co</span>
-								</div>
-							</div>
-						</div>
-						<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;padding:0px 16px;">
-							<b style="font-size:13px">Item Description</b>
-							<span style="font-size:16px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eos at fugiat corporis odio dolorum blanditiis officia molestiae sit omnis, iusto ad distinctio perspiciatis consequatur facilis magni sapiente dolor modi.</span>
-						</div>
-
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">STOCK DETAILS</b>
-							<div class="d-flex" style="width:100%">
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Lead Time</b>
-										<span style="font-size:16px;">14</span>
-									</div>
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Lead Time </b>
-										<span style="font-size:16px;">23</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Safety Stock</b>
-										<span style="font-size:16px;">250</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Current Stocks</b>
-										<span style="font-size:16px;color:green;font-weight:bold;">123 pcs.</span>
-									</div>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Daily Usage</b>
-										<span style="font-size:16px;">10</span>
-									</div>
-									<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Daily Usage</b>
-										<span style="font-size:16px;">15</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Reorder Point</b>
-										<span style="font-size:16px;">75</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">MOVEMENT HISTORY</b>
-							
-						</div>
-					  </div>
 					</div>
 					<!-- /.card-body -->
 				</div>
@@ -623,6 +570,225 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+	<!-- Modal for adding a new purchase order -->
+<!-- Modal for adding a new purchase order (large size) -->
+<!-- Modal for adding a new supplier -->
+<div class="modal fade" id="addsupplierDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add New Supplier</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Supplier Information form -->
+                <form id="supplierForm">
+                    <div class="form-group">
+                        <label for="supplierName">Supplier Name:</label>
+                        <input type="text" class="form-control" id="supplierName" name="supplierName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPerson">Contact Person:</label>
+                        <input type="text" class="form-control" id="contactPerson" name="contactPerson" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" class="form-control" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status:</label>
+                        <select class="form-control" id="status" name="status" required>
+                            <option value="Active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" form="supplierForm">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal for displaying supplier details -->
+<div class="modal fade" id="supplierDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Supplier Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="staticSupplierName">Supplier Name:</label>
+                            <input type="text" class="form-control" id="staticSupplierName" readonly value="Supplier A">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticContactPerson">Contact Person:</label>
+                            <input type="text" class="form-control" id="staticContactPerson" readonly value="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticEmail">Email:</label>
+                            <input type="email" class="form-control" id="staticEmail" readonly value="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticPhone">Phone:</label>
+                            <input type="tel" class="form-control" id="staticPhone" readonly value="(123) 456-7890">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="staticAddress">Address:</label>
+                            <input type="text" class="form-control" id="staticAddress" readonly value="123 Elm Street, City A">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticStatus">Status:</label>
+                            <input type="text" class="form-control" id="staticStatus" readonly value="Active">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticRating">Rating:</label>
+                            <input type="text" class="form-control" id="staticRating" readonly value="4.5/5">
+                        </div>
+						<div class="form-group">
+							<label for="staticPaymentTerms">Payment Terms:</label>
+							<input type="text" class="form-control" id="staticPaymentTerms" readonly value="Net 30 days">
+						</div>
+                    </div>
+                </div>
+
+                <!-- Order History Section -->
+                <h4>Order History</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Order Number</th>
+                            <th>Date</th>
+                            <th>Total Amount</th>
+                            <th>Status</th>
+                            <th>Payment Method</th>
+                            <th>Shipping Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD001</td>
+                            <td>2023-01-15</td>
+                            <td>1,200.00</td>
+                            <td>Shipped</td>
+                            <td>Credit Card</td>
+                            <td>456 Oak Avenue, City B</td>
+                        </tr>
+                        <tr>
+                            <td>ORD002</td>
+                            <td>2023-02-05</td>
+                            <td>900.00</td>
+                            <td>Delivered</td>
+                            <td>PayPal</td>
+                            <td>789 Maple Road, City C</td>
+                        </tr>
+                        <tr>
+                            <td>ORD003</td>
+                            <td>2023-03-20</td>
+                            <td>2,350.00</td>
+                            <td>Shipped</td>
+                            <td>Cash on Delivery</td>
+                            <td>234 Pine Lane, City D</td>
+                        </tr>
+                        <tr>
+                            <td>ORD004</td>
+                            <td>2023-04-10</td>
+                            <td>800.00</td>
+                            <td>Pending</td>
+                            <td>Credit Card</td>
+                            <td>567 Birch Street, City E</td>
+                        </tr>
+                        <tr>
+                            <td>ORD005</td>
+                            <td>2023-05-15</td>
+                            <td>1,600.00</td>
+                            <td>Delivered</td>
+                            <td>PayPal</td>
+                            <td>890 Cedar Avenue, City F</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+				<!-- Product/Service Catalog Section -->
+				<h4>Product/Service Catalog</h4>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Product/Service Name</th>
+							<th>Description</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Product 1</td>
+							<td>Description of Product 1</td>
+							<td>50.00</td>
+						</tr>
+						<tr>
+							<td>Product 2</td>
+							<td>Description of Product 2</td>
+							<td>75.00</td>
+						</tr>
+						<tr>
+							<td>Product 3</td>
+							<td>Description of Product 3</td>
+							<td>60.00</td>
+						</tr>
+						<tr>
+							<td>Product 4</td>
+							<td>Description of Product 4</td>
+							<td>45.00</td>
+						</tr>
+						<tr>
+							<td>Product 5</td>
+							<td>Description of Product 5</td>
+							<td>85.00</td>
+						</tr>
+						<tr>
+							<td>Product 6</td>
+							<td>Description of Product 6</td>
+							<td>70.00</td>
+						</tr>
+						<tr>
+							<td>Product 7</td>
+							<td>Description of Product 7</td>
+							<td>55.00</td>
+						</tr>
+						<!-- Add more rows for products/services if needed -->
+					</tbody>
+				</table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

@@ -218,15 +218,15 @@
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="inventory.html" class="nav-link active">
+			  <a href="inventory.html" class="nav-link">
 				<i class="nav-icon fas fa-warehouse"></i>
 				<p>
 				  Inventory
 				</p>
 			  </a>
 			</li>
-			<li class="nav-item">
-				<a href="" class="nav-link">
+			<li class="nav-item menu-open">
+				<a href="" class="nav-link active">
 				<i class="nav-icon fas fa-money-bill-wave"></i>
 				  <p>
 					Purchasing
@@ -235,7 +235,7 @@
 				</a>
 				<ul class="nav nav-treeview">
 				  <li class="nav-item">
-					<a href="purchasing.html" class="nav-link">
+					<a href="purchasing.html" class="nav-link active">
 					  <i class="far fa-circle nav-icon"></i>
 					  <p>Purchase Orders</p>
 					</a>
@@ -366,12 +366,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Inventory</h1>
+            <h1 class="m-0">Purchase Orders</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Inventory</li>
+              <li class="breadcrumb-item active">Purchase Orders</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -388,11 +388,11 @@
 			<div class="d-flex">
 				<div class="card" style="flex:2; margin-right:24px;">
 					<div class="card-header">
-					  <h3 class="card-title">LIST OF ITEMS</h3>
+					  <h3 class="card-title">ORDERS LIST</h3>
 	  
 					  <div class="card-tools">
 						<div class="d-flex float-right" style="margin-left:24px!important;">
-							<div class="d-flex align-items-center input-group input-group-sm" style="margin-right:16px;">
+							<!-- <div class="d-flex align-items-center input-group input-group-sm" style="margin-right:16px;">
 								<span style="margin-right:7px;">Category</span>
 								<select name="" id="" class="form-control input-sm">
 									<option value="tools">Tools</option>
@@ -408,6 +408,9 @@
 									<option value="Meters">Meters</option>
 									<option value="Inches">Inches</option>
 								</select>
+							</div> -->
+							<div class="d-flex align-items-center input-group input-group-sm">
+								<button class="btn btn-success btn-sm" style="width:75px" data-toggle="modal" data-target="#addPurchaseOrderModal"><i class="fa fa-plus"></i> New</button>
 							</div>
 						  </div>
 						<div class="input-group input-group-sm" style="width: 150px;">
@@ -425,194 +428,282 @@
 					  <table class="table table-hover text-nowrap">
 						<thead>
 						  <tr>
-							<th>SKU</th>
-							<th>Item Name</th>
-							<th>Category</th>
-							<th>Measurement</th>
-							<th>Safety Stock</th>
-							<th>Reorder Point</th>
+							<th>Purchase Order Number</th>
+							<th>Supplier</th>
+							<th>Order Date</th>
+							<th>Due Date</th>
+							<th>Item Description</th>
+							<th>Quantity</th>
+							<th>Unit Price</th>
+							<th>Total Price</th>
+							<th>Tax</th>
+							<th>Shipping/Handling</th>
+							<th>Total Amount</th>
+							<th>Payment Terms</th>
+							<th>Payment Method</th>
+							<th>Shipping Address</th>
+							<th>Billing Address</th>
 						  </tr>
 						</thead>
 						<tbody>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						
+							<tr>
+								<td>PO001</td>
+								<td>Supplier A</td>
+								<td>2023-09-01</td>
+								<td>2023-09-15</td>
+								<td>Widget A</td>
+								<td>100</td>
+								<td>10.00</td>
+								<td>1,000.00</td>
+								<td>50.00</td>
+								<td>20.00</td>
+								<td>1,070.00</td>
+								<td>Net 30</td>
+								<td>Credit Card</td>
+								<td>123 Main St, City A</td>
+								<td>456 Billing St, City A</td>
+							</tr>
+							<tr>
+								<td>PO002</td>
+								<td>Supplier B</td>
+								<td>2023-09-03</td>
+								<td>2023-09-17</td>
+								<td>Widget B</td>
+								<td>75</td>
+								<td>15.50</td>
+								<td>1,162.50</td>
+								<td>58.13</td>
+								<td>25.00</td>
+								<td>1,245.63</td>
+								<td>Net 45</td>
+								<td>Check</td>
+								<td>789 Elm St, City B</td>
+								<td>101 Billing Ave, City B</td>
+							</tr>
+							<tr>
+								<td>PO003</td>
+								<td>Supplier C</td>
+								<td>2023-09-05</td>
+								<td>2023-09-20</td>
+								<td>Gizmo A</td>
+								<td>50</td>
+								<td>25.00</td>
+								<td>1,250.00</td>
+								<td>62.50</td>
+								<td>30.00</td>
+								<td>1,342.50</td>
+								<td>Net 60</td>
+								<td>Credit Card</td>
+								<td>456 Oak St, City C</td>
+								<td>202 Billing Rd, City C</td>
+							</tr>
+							<tr>
+								<td>PO004</td>
+								<td>Supplier D</td>
+								<td>2023-09-08</td>
+								<td>2023-09-22</td>
+								<td>Widget C</td>
+								<td>200</td>
+								<td>8.75</td>
+								<td>1,750.00</td>
+								<td>87.50</td>
+								<td>40.00</td>
+								<td>1,877.50</td>
+								<td>Net 30</td>
+								<td>Electronic Transfer</td>
+								<td>789 Pine St, City D</td>
+								<td>303 Billing Ln, City D</td>
+							</tr>
+							<tr>
+								<td>PO005</td>
+								<td>Supplier E</td>
+								<td>2023-09-10</td>
+								<td>2023-09-25</td>
+								<td>Gizmo B</td>
+								<td>40</td>
+								<td>32.00</td>
+								<td>1,280.00</td>
+								<td>64.00</td>
+								<td>15.00</td>
+								<td>1,359.00</td>
+								<td>Net 45</td>
+								<td>Check</td>
+								<td>101 Maple St, City E</td>
+								<td>404 Billing Dr, City E</td>
+							</tr>
+							<tr>
+								<td>PO006</td>
+								<td>Supplier F</td>
+								<td>2023-09-12</td>
+								<td>2023-09-27</td>
+								<td>Widget D</td>
+								<td>150</td>
+								<td>12.00</td>
+								<td>1,800.00</td>
+								<td>90.00</td>
+								<td>35.00</td>
+								<td>1,925.00</td>
+								<td>Net 60</td>
+								<td>Credit Card</td>
+								<td>555 Cedar St, City F</td>
+								<td>505 Billing Ave, City F</td>
+							</tr>
+							<tr>
+								<td>PO007</td>
+								<td>Supplier G</td>
+								<td>2023-09-15</td>
+								<td>2023-09-30</td>
+								<td>Gizmo C</td>
+								<td>60</td>
+								<td>20.75</td>
+								<td>1,245.00</td>
+								<td>62.25</td>
+								<td>18.50</td>
+								<td>1,325.75</td>
+								<td>Net 30</td>
+								<td>Electronic Transfer</td>
+								<td>303 Birch St, City G</td>
+								<td>606 Billing Rd, City G</td>
+							</tr>
+							<tr>
+								<td>PO008</td>
+								<td>Supplier H</td>
+								<td>2023-09-18</td>
+								<td>2023-10-03</td>
+								<td>Widget E</td>
+								<td>90</td>
+								<td>14.25</td>
+								<td>1,282.50</td>
+								<td>64.13</td>
+								<td>22.00</td>
+								<td>1,368.63</td>
+								<td>Net 45</td>
+								<td>Check</td>
+								<td>707 Elm St, City H</td>
+								<td>707 Billing Ave, City H</td>
+							</tr>
+							<tr>
+								<td>PO009</td>
+								<td>Supplier I</td>
+								<td>2023-09-20</td>
+								<td>2023-10-05</td>
+								<td>Gizmo D</td>
+								<td>120</td>
+								<td>18.00</td>
+								<td>2,160.00</td>
+								<td>108.00</td>
+								<td>28.50</td>
+								<td>2,296.50</td>
+								<td>Net 60</td>
+								<td>Credit Card</td>
+								<td>808 Oak St, City I</td>
+								<td>808 Billing Dr, City I</td>
+							</tr>
+							<tr>
+								<td>PO010</td>
+								<td>Supplier J</td>
+								<td>2023-09-22</td>
+								<td>2023-10-07</td>
+								<td>Widget F</td>
+								<td>50</td>
+								<td>22.50</td>
+								<td>1,125.00</td>
+								<td>56.25</td>
+								<td>15.00</td>
+								<td>1,196.25</td>
+								<td>Net 30</td>
+								<td>Electronic Transfer</td>
+								<td>909 Pine St, City J</td>
+								<td>909 Billing Ave, City J</td>
+							</tr>
+							<tr>
+								<td>PO011</td>
+								<td>Supplier K</td>
+								<td>2023-09-25</td>
+								<td>2023-10-10</td>
+								<td>Gizmo E</td>
+								<td>80</td>
+								<td>28.75</td>
+								<td>2,300.00</td>
+								<td>115.00</td>
+								<td>32.50</td>
+								<td>2,447.50</td>
+								<td>Net 45</td>
+								<td>Check</td>
+								<td>1010 Maple St, City K</td>
+								<td>1010 Billing Ave, City K</td>
+							</tr>
+							<tr>
+								<td>PO012</td>
+								<td>Supplier L</td>
+								<td>2023-09-28</td>
+								<td>2023-10-13</td>
+								<td>Widget G</td>
+								<td>100</td>
+								<td>11.00</td>
+								<td>1,100.00</td>
+								<td>55.00</td>
+								<td>18.75</td>
+								<td>1,173.75</td>
+								<td>Net 60</td>
+								<td>Credit Card</td>
+								<td>111 Cedar St, City L</td>
+								<td>111 Billing Dr, City L</td>
+							</tr>
+							<tr>
+								<td>PO013</td>
+								<td>Supplier M</td>
+								<td>2023-10-01</td>
+								<td>2023-10-16</td>
+								<td>Gizmo F</td>
+								<td>30</td>
+								<td>35.00</td>
+								<td>1,050.00</td>
+								<td>52.50</td>
+								<td>12.00</td>
+								<td>1,114.50</td>
+								<td>Net 30</td>
+								<td>Electronic Transfer</td>
+								<td>121 Pine St, City M</td>
+								<td>121 Billing Ave, City M</td>
+							</tr>
+							<tr>
+								<td>PO014</td>
+								<td>Supplier N</td>
+								<td>2023-10-04</td>
+								<td>2023-10-19</td>
+								<td>Widget H</td>
+								<td>65</td>
+								<td>19.75</td>
+								<td>1,283.75</td>
+								<td>64.19</td>
+								<td>24.50</td>
+								<td>1,372.44</td>
+								<td>Net 45</td>
+								<td>Check</td>
+								<td>131 Oak St, City N</td>
+								<td>131 Billing Dr, City N</td>
+							</tr>
+							<tr>
+								<td>PO015</td>
+								<td>Supplier O</td>
+								<td>2023-10-07</td>
+								<td>2023-10-22</td>
+								<td>Gizmo G</td>
+								<td>85</td>
+								<td>24.50</td>
+								<td>2,082.50</td>
+								<td>104.13</td>
+								<td>35.00</td>
+								<td>2,221.63</td>
+								<td>Net 60</td>
+								<td>Credit Card</td>
+								<td>141 Maple St, City O</td>
+								<td>141 Billing Ave, City O</td>
+							</tr>
+
 						</tbody>
 					  </table>
-					</div>
-					<!-- /.card-body -->
-				</div>
-				<div class="card" style="flex:1">
-					<div class="card-header">
-					  <h3 class="card-title">ITEM DETAILS</h3>
-					</div>
-					<!-- /.card-header -->
-					<div class="card-body table-responsive p-0">
-					  <div class="d-flex flex-column">
-						<img src="product.jpg" alt="">
-						<div class="d-flex" style="padding:16px;width:100%">
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Name</b>
-									<span style="font-size:16px;">Chain Saw</span>
-								</div>
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Brand</b>
-									<span style="font-size:16px;">STIHL</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Manufacturer</b>
-									<span style="font-size:16px;">STIHL Company</span>
-								</div>
-							</div>
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Weight</b>
-									<span style="font-size:16px;">15KG</span>
-								</div>
-								<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-									<b style="font-size:13px">Category</b>
-									<span style="font-size:16px;">Equipment</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Supplier</b>
-									<span style="font-size:16px;">Harrows Industrial Co</span>
-								</div>
-							</div>
-						</div>
-						<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;padding:0px 16px;">
-							<b style="font-size:13px">Item Description</b>
-							<span style="font-size:16px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eos at fugiat corporis odio dolorum blanditiis officia molestiae sit omnis, iusto ad distinctio perspiciatis consequatur facilis magni sapiente dolor modi.</span>
-						</div>
-
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">STOCK DETAILS</b>
-							<div class="d-flex" style="width:100%">
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Lead Time</b>
-										<span style="font-size:16px;">14</span>
-									</div>
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Lead Time </b>
-										<span style="font-size:16px;">23</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Safety Stock</b>
-										<span style="font-size:16px;">250</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Current Stocks</b>
-										<span style="font-size:16px;color:green;font-weight:bold;">123 pcs.</span>
-									</div>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Daily Usage</b>
-										<span style="font-size:16px;">10</span>
-									</div>
-									<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Daily Usage</b>
-										<span style="font-size:16px;">15</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Reorder Point</b>
-										<span style="font-size:16px;">75</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">MOVEMENT HISTORY</b>
-							
-						</div>
-					  </div>
 					</div>
 					<!-- /.card-body -->
 				</div>
@@ -623,6 +714,97 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+	<!-- Modal for adding a new purchase order -->
+<!-- Modal for adding a new purchase order (large size) -->
+<div class="modal fade" id="addPurchaseOrderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add New Purchase Order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Purchase Order form - Column 1 -->
+                        <form id="purchaseOrderForm">
+                            <div class="form-group">
+                                <label for="poNumber">Purchase Order Number:</label>
+                                <input type="text" class="form-control" id="poNumber" name="poNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="supplier">Supplier:</label>
+                                <input type="text" class="form-control" id="supplier" name="supplier" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderDate">Order Date:</label>
+                                <input type="date" class="form-control" id="orderDate" name="orderDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dueDate">Due Date:</label>
+                                <input type="date" class="form-control" id="dueDate" name="dueDate" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Purchase Order form - Column 2 -->
+                        <form id="purchaseOrderForm">
+                            <div class="form-group">
+                                <label for="itemDescription">Item Description:</label>
+                                <input type="text" class="form-control" id="itemDescription" name="itemDescription" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quantity">Quantity:</label>
+                                <input type="number" class="form-control" id="quantity" name="quantity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="unitPrice">Unit Price:</label>
+                                <input type="number" step="0.01" class="form-control" id="unitPrice" name="unitPrice" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tax">Tax:</label>
+                                <input type="number" step="0.01" class="form-control" id="tax" name="tax" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Purchase Order form - Column 3 -->
+                        <form id="purchaseOrderForm">
+                            <div class="form-group">
+                                <label for="shippingHandling">Shipping/Handling:</label>
+                                <input type="number" step="0.01" class="form-control" id="shippingHandling" name="shippingHandling" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="paymentTerms">Payment Terms:</label>
+                                <input type="text" class="form-control" id="paymentTerms" name="paymentTerms" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="paymentMethod">Payment Method:</label>
+                                <input type="text" class="form-control" id="paymentMethod" name="paymentMethod" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shippingAddress">Shipping Address:</label>
+                                <input type="text" class="form-control" id="shippingAddress" name="shippingAddress" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="billingAddress">Billing Address:</label>
+                                <input type="text" class="form-control" id="billingAddress" name="billingAddress" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" form="purchaseOrderForm">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

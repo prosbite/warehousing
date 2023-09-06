@@ -218,15 +218,15 @@
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="inventory.html" class="nav-link active">
+			  <a href="inventory.html" class="nav-link">
 				<i class="nav-icon fas fa-warehouse"></i>
 				<p>
 				  Inventory
 				</p>
 			  </a>
 			</li>
-			<li class="nav-item">
-				<a href="" class="nav-link">
+			<li class="nav-item menu-open">
+				<a href="" class="nav-link active">
 				<i class="nav-icon fas fa-money-bill-wave"></i>
 				  <p>
 					Purchasing
@@ -247,7 +247,7 @@
 					</a>
 				  </li>
 				  <li class="nav-item">
-					<a href="approval_workflows.html" class="nav-link">
+					<a href="approval_workflows.html" class="nav-link active">
 					  <i class="far fa-circle nav-icon"></i>
 					  <p>Approval Workflows</p>
 					</a>
@@ -366,12 +366,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Inventory</h1>
+            <h1 class="m-0">Approval Workflows</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Inventory</li>
+              <li class="breadcrumb-item active">Approval Workflows</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -388,11 +388,11 @@
 			<div class="d-flex">
 				<div class="card" style="flex:2; margin-right:24px;">
 					<div class="card-header">
-					  <h3 class="card-title">LIST OF ITEMS</h3>
+					  <h3 class="card-title">APPROVAL WORKFLOW</h3>
 	  
 					  <div class="card-tools">
 						<div class="d-flex float-right" style="margin-left:24px!important;">
-							<div class="d-flex align-items-center input-group input-group-sm" style="margin-right:16px;">
+							<!-- <div class="d-flex align-items-center input-group input-group-sm" style="margin-right:16px;">
 								<span style="margin-right:7px;">Category</span>
 								<select name="" id="" class="form-control input-sm">
 									<option value="tools">Tools</option>
@@ -408,7 +408,10 @@
 									<option value="Meters">Meters</option>
 									<option value="Inches">Inches</option>
 								</select>
-							</div>
+							</div> -->
+							<!-- <div class="d-flex align-items-center input-group input-group-sm">
+								<button class="btn btn-success btn-sm" style="width:75px" data-toggle="modal" data-target="#addsupplierDetailsModal"><i class="fa fa-plus"></i> New</button>
+							</div> -->
 						  </div>
 						<div class="input-group input-group-sm" style="width: 150px;">
 						  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -422,197 +425,93 @@
 					</div>
 					<!-- /.card-header -->
 					<div class="card-body table-responsive p-0">
-					  <table class="table table-hover text-nowrap">
-						<thead>
-						  <tr>
-							<th>SKU</th>
-							<th>Item Name</th>
-							<th>Category</th>
-							<th>Measurement</th>
-							<th>Safety Stock</th>
-							<th>Reorder Point</th>
-						  </tr>
-						</thead>
-						<tbody>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						  <tr>
-							<td>183</td>
-							<td><a href="">Item #1</a></td>
-							<td>Tools</td>
-							<td>25 KG</td>
-							<td>250</td>
-							<td>75</td>
-						  </tr>
-						
-						</tbody>
-					  </table>
-					</div>
-					<!-- /.card-body -->
-				</div>
-				<div class="card" style="flex:1">
-					<div class="card-header">
-					  <h3 class="card-title">ITEM DETAILS</h3>
-					</div>
-					<!-- /.card-header -->
-					<div class="card-body table-responsive p-0">
-					  <div class="d-flex flex-column">
-						<img src="product.jpg" alt="">
-						<div class="d-flex" style="padding:16px;width:100%">
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Name</b>
-									<span style="font-size:16px;">Chain Saw</span>
-								</div>
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Item Brand</b>
-									<span style="font-size:16px;">STIHL</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Manufacturer</b>
-									<span style="font-size:16px;">STIHL Company</span>
-								</div>
-							</div>
-							<div class="d-flex flex-column flex-1">
-								<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-									<b style="font-size:13px">Weight</b>
-									<span style="font-size:16px;">15KG</span>
-								</div>
-								<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-									<b style="font-size:13px">Category</b>
-									<span style="font-size:16px;">Equipment</span>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<b style="font-size:13px">Supplier</b>
-									<span style="font-size:16px;">Harrows Industrial Co</span>
-								</div>
-							</div>
-						</div>
-						<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;padding:0px 16px;">
-							<b style="font-size:13px">Item Description</b>
-							<span style="font-size:16px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eos at fugiat corporis odio dolorum blanditiis officia molestiae sit omnis, iusto ad distinctio perspiciatis consequatur facilis magni sapiente dolor modi.</span>
-						</div>
-
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">STOCK DETAILS</b>
-							<div class="d-flex" style="width:100%">
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Lead Time</b>
-										<span style="font-size:16px;">14</span>
+						<div class="row">
+							<div class="col-md-4 mb-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Workflow 1
 									</div>
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Lead Time </b>
-										<span style="font-size:16px;">23</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Safety Stock</b>
-										<span style="font-size:16px;">250</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Current Stocks</b>
-										<span style="font-size:16px;color:green;font-weight:bold;">123 pcs.</span>
-									</div>
-								</div>
-								<div class="d-flex flex-column flex-1">
-									<div class="d-flex flex-column flex-1" style="margin-bottom: 5px;">
-										<b style="font-size:13px">Avg. Daily Usage</b>
-										<span style="font-size:16px;">10</span>
-									</div>
-									<div class="d-flex flex-column flex-1"  style="margin-bottom: 5px;">
-										<b style="font-size:13px">Max Daily Usage</b>
-										<span style="font-size:16px;">15</span>
-									</div>
-									<div class="d-flex flex-column flex-1">
-										<b style="font-size:13px">Reorder Point</b>
-										<span style="font-size:16px;">75</span>
+									<div class="card-body">
+										<p>Description: This is the first approval workflow.</p>
+										<p>Status: Active</p>
+										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
 									</div>
 								</div>
 							</div>
+							<div class="col-md-4 mb-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Workflow 2
+									</div>
+									<div class="card-body">
+										<p>Description: This is the second approval workflow.</p>
+										<p>Status: Active</p>
+										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Workflow 3
+									</div>
+									<div class="card-body">
+										<p>Description: This is the third approval workflow.</p>
+										<p>Status: Active</p>
+										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Workflow 4
+									</div>
+									<div class="card-body">
+										<p>Description: This is the fourth approval workflow.</p>
+										<p>Status: Active</p>
+										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Workflow 5
+									</div>
+									<div class="card-body">
+										<p>Description: This is the fifth approval workflow.</p>
+										<p>Status: Active</p>
+										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Workflow 6
+									</div>
+									<div class="card-body">
+										<p>Description: This is the sixth approval workflow.</p>
+										<p>Status: Active</p>
+										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Workflow 7
+									</div>
+									<div class="card-body">
+										<p>Description: This is the seventh approval workflow.</p>
+										<p>Status: Active</p>
+										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
+									</div>
+								</div>
+							</div>
+							<!-- Add more workflow cards here -->
 						</div>
-						<div class="stock-details" style="padding:16px;">
-							<b style="border-bottom:1px solid #ddd;margin-bottom:12px;display:block;padding-bottom:7px;">MOVEMENT HISTORY</b>
-							
-						</div>
-					  </div>
 					</div>
 					<!-- /.card-body -->
 				</div>
@@ -623,6 +522,125 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+
+	<div class="modal fade" id="workflowModal1" tabindex="-1" role="dialog" aria-labelledby="workflowModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="workflowModalLabel">Workflow Details</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Description: This is the static content for Workflow.</p>
+					<p>Status: Active</p>
+	
+					<!-- Request List for Workflow 2 (Static Data) -->
+					<!-- Request List for Workflow 2 (Static Data) -->
+					<h2>Requests for Workflow</h2>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Requester</th>
+								<th>Type</th>
+								<th>Date Submitted</th>
+								<th>Status</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>John Doe</td>
+								<td>Purchase Order</td>
+								<td>2023-01-15</td>
+								<td>Pending</td>
+								<td>
+									<button class="btn btn-primary btn-sm">View Details</button>
+									<button class="btn btn-success btn-sm">Approve</button>
+									<button class="btn btn-danger btn-sm">Reject</button>
+								</td>
+							</tr>
+							<tr>
+								<td>Jane Smith</td>
+								<td>Expense Report</td>
+								<td>2023-02-20</td>
+								<td>Pending</td>
+								<td>
+									<button class="btn btn-primary btn-sm">View Details</button>
+									<button class="btn btn-success btn-sm">Approve</button>
+									<button class="btn btn-danger btn-sm">Reject</button>
+								</td>
+							</tr>
+							<tr>
+								<td>Robert Johnson</td>
+								<td>Inventory Restocking</td>
+								<td>2023-03-05</td>
+								<td>Pending</td>
+								<td>
+									<button class="btn btn-primary btn-sm">View Details</button>
+									<button class="btn btn-success btn-sm">Approve</button>
+									<button class="btn btn-danger btn-sm">Reject</button>
+								</td>
+							</tr>
+							<tr>
+								<td>Susan White</td>
+								<td>Shipment Release</td>
+								<td>2023-04-10</td>
+								<td>Pending</td>
+								<td>
+									<button class="btn btn-primary btn-sm">View Details</button>
+									<button class="btn btn-success btn-sm">Approve</button>
+									<button class="btn btn-danger btn-sm">Reject</button>
+								</td>
+							</tr>
+							<tr>
+								<td>Michael Brown</td>
+								<td>Equipment Maintenance</td>
+								<td>2023-05-15</td>
+								<td>Pending</td>
+								<td>
+									<button class="btn btn-primary btn-sm">View Details</button>
+									<button class="btn btn-success btn-sm">Approve</button>
+									<button class="btn btn-danger btn-sm">Reject</button>
+								</td>
+							</tr>
+							<tr>
+								<td>Linda Davis</td>
+								<td>Inventory Disposal</td>
+								<td>2023-06-20</td>
+								<td>Pending</td>
+								<td>
+									<button class="btn btn-primary btn-sm">View Details</button>
+									<button class="btn btn-success btn-sm">Approve</button>
+									<button class="btn btn-danger btn-sm">Reject</button>
+								</td>
+							</tr>
+							<tr>
+								<td>William Clark</td>
+								<td>Warehouse Access</td>
+								<td>2023-07-25</td>
+								<td>Pending</td>
+								<td>
+									<button class="btn btn-primary btn-sm">View Details</button>
+									<button class="btn btn-success btn-sm">Approve</button>
+									<button class="btn btn-danger btn-sm">Reject</button>
+								</td>
+							</tr>
+							<!-- Add more request rows for Workflow 2 here (Static Data) -->
+						</tbody>
+					</table>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
