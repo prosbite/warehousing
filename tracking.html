@@ -247,13 +247,13 @@
 					</a>
 				  </li>
 				  <li class="nav-item">
-					<a href="approval_workflows.html" class="nav-link active">
+					<a href="approval_workflows.html" class="nav-link">
 					  <i class="far fa-circle nav-icon"></i>
 					  <p>Approval Workflows</p>
 					</a>
 				  </li>
 				  <li class="nav-item">
-					<a href="tracking.html" class="nav-link">
+					<a href="tracking.html" class="nav-link active">
 					  <i class="far fa-circle nav-icon"></i>
 					  <p>Tracking</p>
 					</a>
@@ -366,12 +366,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Approval Workflows</h1>
+            <h1 class="m-0">Tracking of Orders</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Approval Workflows</li>
+              <li class="breadcrumb-item active">Tracking of Orders</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -388,7 +388,7 @@
 			<div class="d-flex">
 				<div class="card" style="flex:2; margin-right:24px;">
 					<div class="card-header">
-					  <h3 class="card-title">APPROVAL WORKFLOW</h3>
+					  <h3 class="card-title">ORDERS LIST</h3>
 	  
 					  <div class="card-tools">
 						<div class="d-flex float-right" style="margin-left:24px!important;">
@@ -409,9 +409,6 @@
 									<option value="Inches">Inches</option>
 								</select>
 							</div> -->
-							<!-- <div class="d-flex align-items-center input-group input-group-sm">
-								<button class="btn btn-success btn-sm" style="width:75px" data-toggle="modal" data-target="#addsupplierDetailsModal"><i class="fa fa-plus"></i> New</button>
-							</div> -->
 						  </div>
 						<div class="input-group input-group-sm" style="width: 150px;">
 						  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -425,92 +422,143 @@
 					</div>
 					<!-- /.card-header -->
 					<div class="card-body table-responsive p-0">
-						<div class="row">
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 1
-									</div>
-									<div class="card-body">
-										<p>Description: This is the first approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 2
-									</div>
-									<div class="card-body">
-										<p>Description: This is the second approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 3
-									</div>
-									<div class="card-body">
-										<p>Description: This is the third approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 4
-									</div>
-									<div class="card-body">
-										<p>Description: This is the fourth approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 5
-									</div>
-									<div class="card-body">
-										<p>Description: This is the fifth approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 6
-									</div>
-									<div class="card-body">
-										<p>Description: This is the sixth approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 7
-									</div>
-									<div class="card-body">
-										<p>Description: This is the seventh approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<!-- Add more workflow cards here -->
+						<div class="table-responsive">
+							<table class="table table-bordered table-striped">
+								<thead>
+									<tr>
+										<th>Order Number</th>
+										<th>Customer Name</th>
+										<th>Status</th>
+										<th>Order Date</th>
+										<th>Payment Method</th>
+										<th>Shipping Address</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- Dummy Data Rows -->
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD001</a></td>
+										<td>Customer A</td>
+										<td>Completed</td>
+										<td>Sep 5, 2023</td>
+										<td>Credit Card</td>
+										<td>123 Main St, City A</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD002</a></td>
+										<td>Customer B</td>
+										<td>Pending</td>
+										<td>Sep 10, 2023</td>
+										<td>PayPal</td>
+										<td>456 Elm St, City B</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD003</a></td>
+										<td>Customer C</td>
+										<td>Completed</td>
+										<td>Sep 15, 2023</td>
+										<td>Cash On Delivery</td>
+										<td>789 Oak St, City C</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD004</a></td>
+										<td>Customer D</td>
+										<td>Pending</td>
+										<td>Sep 20, 2023</td>
+										<td>Credit Card</td>
+										<td>101 Pine St, City D</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD005</a></td>
+										<td>Customer E</td>
+										<td>Completed</td>
+										<td>Sep 25, 2023</td>
+										<td>Bank Transfer</td>
+										<td>202 Maple St, City E</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD006</a></td>
+										<td>Customer F</td>
+										<td>Pending</td>
+										<td>Sep 30, 2023</td>
+										<td>Credit Card</td>
+										<td>210 Elm St, City F</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD007</a></td>
+										<td>Customer G</td>
+										<td>Completed</td>
+										<td>Oct 5, 2023</td>
+										<td>PayPal</td>
+										<td>321 Oak St, City G</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD008</a></td>
+										<td>Customer H</td>
+										<td>Pending</td>
+										<td>Oct 10, 2023</td>
+										<td>Cash On Delivery</td>
+										<td>432 Pine St, City H</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD009</a></td>
+										<td>Customer I</td>
+										<td>Completed</td>
+										<td>Oct 15, 2023</td>
+										<td>Credit Card</td>
+										<td>543 Maple St, City I</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD010</a></td>
+										<td>Customer J</td>
+										<td>Pending</td>
+										<td>Oct 20, 2023</td>
+										<td>Bank Transfer</td>
+										<td>654 Birch St, City J</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD011</a></td>
+										<td>Customer K</td>
+										<td>Completed</td>
+										<td>Oct 25, 2023</td>
+										<td>Cash On Delivery</td>
+										<td>765 Cedar St, City K</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD012</a></td>
+										<td>Customer L</td>
+										<td>Pending</td>
+										<td>Oct 30, 2023</td>
+										<td>Credit Card</td>
+										<td>876 Elm St, City L</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD013</a></td>
+										<td>Customer M</td>
+										<td>Completed</td>
+										<td>Nov 5, 2023</td>
+										<td>PayPal</td>
+										<td>987 Oak St, City M</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD014</a></td>
+										<td>Customer N</td>
+										<td>Pending</td>
+										<td>Nov 10, 2023</td>
+										<td>Bank Transfer</td>
+										<td>123 Pine St, City N</td>
+									</tr>
+									<tr>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">ORD015</a></td>
+										<td>Customer O</td>
+										<td>Completed</td>
+										<td>Nov 15, 2023</td>
+										<td>Cash On Delivery</td>
+										<td>234 Maple St, City O</td>
+									</tr>
+									<!-- Add more dummy data rows here -->
+								</tbody>
+							</table>
 						</div>
 					</div>
 					<!-- /.card-body -->
@@ -523,122 +571,196 @@
     </section>
     <!-- /.content -->
 
-	<div class="modal fade" id="workflowModal1" tabindex="-1" role="dialog" aria-labelledby="workflowModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-xl" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="workflowModalLabel">Workflow Details</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Description: This is the static content for Workflow.</p>
-					<p>Status: Active</p>
-	
-					<!-- Request List for Workflow 2 (Static Data) -->
-					<!-- Request List for Workflow 2 (Static Data) -->
-					<h2>Requests for Workflow</h2>
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<th>Requester</th>
-								<th>Type</th>
-								<th>Date Submitted</th>
-								<th>Status</th>
-								<th>Action</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>John Doe</td>
-								<td>Purchase Order</td>
-								<td>2023-01-15</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Jane Smith</td>
-								<td>Expense Report</td>
-								<td>2023-02-20</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Robert Johnson</td>
-								<td>Inventory Restocking</td>
-								<td>2023-03-05</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Susan White</td>
-								<td>Shipment Release</td>
-								<td>2023-04-10</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Michael Brown</td>
-								<td>Equipment Maintenance</td>
-								<td>2023-05-15</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Linda Davis</td>
-								<td>Inventory Disposal</td>
-								<td>2023-06-20</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>William Clark</td>
-								<td>Warehouse Access</td>
-								<td>2023-07-25</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<!-- Add more request rows for Workflow 2 here (Static Data) -->
-						</tbody>
-					</table>
-
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="orderModal1Label">Order Details - ORD001</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<!-- Order details for ORD001 -->
+				<p>Order Number: ORD001</p>
+				<p>Customer Name: Customer A</p>
+				<p>Status: Completed</p>
+				<p>Order Date: Sep 5, 2023</p>
+				<p>Payment Method: Credit Card</p>
+				<p>Shipping Address: 123 Main St, City A</p>
+				<!-- Add more order details here -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 			</div>
 		</div>
 	</div>
-	
+
+
+<!-- Modal for displaying supplier details -->
+<div class="modal fade" id="supplierDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Supplier Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="staticSupplierName">Supplier Name:</label>
+                            <input type="text" class="form-control" id="staticSupplierName" readonly value="Supplier A">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticContactPerson">Contact Person:</label>
+                            <input type="text" class="form-control" id="staticContactPerson" readonly value="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticEmail">Email:</label>
+                            <input type="email" class="form-control" id="staticEmail" readonly value="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticPhone">Phone:</label>
+                            <input type="tel" class="form-control" id="staticPhone" readonly value="(123) 456-7890">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="staticAddress">Address:</label>
+                            <input type="text" class="form-control" id="staticAddress" readonly value="123 Elm Street, City A">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticStatus">Status:</label>
+                            <input type="text" class="form-control" id="staticStatus" readonly value="Active">
+                        </div>
+                        <div class="form-group">
+                            <label for="staticRating">Rating:</label>
+                            <input type="text" class="form-control" id="staticRating" readonly value="4.5/5">
+                        </div>
+						<div class="form-group">
+							<label for="staticPaymentTerms">Payment Terms:</label>
+							<input type="text" class="form-control" id="staticPaymentTerms" readonly value="Net 30 days">
+						</div>
+                    </div>
+                </div>
+
+                <!-- Order History Section -->
+                <h4>Order History</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Order Number</th>
+                            <th>Date</th>
+                            <th>Total Amount</th>
+                            <th>Status</th>
+                            <th>Payment Method</th>
+                            <th>Shipping Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD001</td>
+                            <td>2023-01-15</td>
+                            <td>1,200.00</td>
+                            <td>Shipped</td>
+                            <td>Credit Card</td>
+                            <td>456 Oak Avenue, City B</td>
+                        </tr>
+                        <tr>
+                            <td>ORD002</td>
+                            <td>2023-02-05</td>
+                            <td>900.00</td>
+                            <td>Delivered</td>
+                            <td>PayPal</td>
+                            <td>789 Maple Road, City C</td>
+                        </tr>
+                        <tr>
+                            <td>ORD003</td>
+                            <td>2023-03-20</td>
+                            <td>2,350.00</td>
+                            <td>Shipped</td>
+                            <td>Cash on Delivery</td>
+                            <td>234 Pine Lane, City D</td>
+                        </tr>
+                        <tr>
+                            <td>ORD004</td>
+                            <td>2023-04-10</td>
+                            <td>800.00</td>
+                            <td>Pending</td>
+                            <td>Credit Card</td>
+                            <td>567 Birch Street, City E</td>
+                        </tr>
+                        <tr>
+                            <td>ORD005</td>
+                            <td>2023-05-15</td>
+                            <td>1,600.00</td>
+                            <td>Delivered</td>
+                            <td>PayPal</td>
+                            <td>890 Cedar Avenue, City F</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+				<!-- Product/Service Catalog Section -->
+				<h4>Product/Service Catalog</h4>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Product/Service Name</th>
+							<th>Description</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Product 1</td>
+							<td>Description of Product 1</td>
+							<td>50.00</td>
+						</tr>
+						<tr>
+							<td>Product 2</td>
+							<td>Description of Product 2</td>
+							<td>75.00</td>
+						</tr>
+						<tr>
+							<td>Product 3</td>
+							<td>Description of Product 3</td>
+							<td>60.00</td>
+						</tr>
+						<tr>
+							<td>Product 4</td>
+							<td>Description of Product 4</td>
+							<td>45.00</td>
+						</tr>
+						<tr>
+							<td>Product 5</td>
+							<td>Description of Product 5</td>
+							<td>85.00</td>
+						</tr>
+						<tr>
+							<td>Product 6</td>
+							<td>Description of Product 6</td>
+							<td>70.00</td>
+						</tr>
+						<tr>
+							<td>Product 7</td>
+							<td>Description of Product 7</td>
+							<td>55.00</td>
+						</tr>
+						<!-- Add more rows for products/services if needed -->
+					</tbody>
+				</table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
   </div>

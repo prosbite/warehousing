@@ -225,8 +225,8 @@
 				</p>
 			  </a>
 			</li>
-			<li class="nav-item menu-open">
-				<a href="" class="nav-link active">
+			<li class="nav-item">
+				<a href="" class="nav-link">
 				<i class="nav-icon fas fa-money-bill-wave"></i>
 				  <p>
 					Purchasing
@@ -247,7 +247,7 @@
 					</a>
 				  </li>
 				  <li class="nav-item">
-					<a href="approval_workflows.html" class="nav-link active">
+					<a href="approval_workflows.html" class="nav-link">
 					  <i class="far fa-circle nav-icon"></i>
 					  <p>Approval Workflows</p>
 					</a>
@@ -261,7 +261,7 @@
 				</ul>
 			</li>
 			<li class="nav-item">
-			  <a href="receiving.html" class="nav-link">
+			  <a href="receiving.html" class="nav-link active">
 				<i class="nav-icon fas fa-sign-in-alt"></i>
 				<p>
 				  Receiving
@@ -366,12 +366,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Approval Workflows</h1>
+            <h1 class="m-0">Receiving of Orders</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Approval Workflows</li>
+              <li class="breadcrumb-item active">Receiving of Orders</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -388,7 +388,7 @@
 			<div class="d-flex">
 				<div class="card" style="flex:2; margin-right:24px;">
 					<div class="card-header">
-					  <h3 class="card-title">APPROVAL WORKFLOW</h3>
+					  <h3 class="card-title">ORDER LIST</h3>
 	  
 					  <div class="card-tools">
 						<div class="d-flex float-right" style="margin-left:24px!important;">
@@ -409,9 +409,6 @@
 									<option value="Inches">Inches</option>
 								</select>
 							</div> -->
-							<!-- <div class="d-flex align-items-center input-group input-group-sm">
-								<button class="btn btn-success btn-sm" style="width:75px" data-toggle="modal" data-target="#addsupplierDetailsModal"><i class="fa fa-plus"></i> New</button>
-							</div> -->
 						  </div>
 						<div class="input-group input-group-sm" style="width: 150px;">
 						  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -425,92 +422,258 @@
 					</div>
 					<!-- /.card-header -->
 					<div class="card-body table-responsive p-0">
-						<div class="row">
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 1
-									</div>
-									<div class="card-body">
-										<p>Description: This is the first approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 2
-									</div>
-									<div class="card-body">
-										<p>Description: This is the second approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 3
-									</div>
-									<div class="card-body">
-										<p>Description: This is the third approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 4
-									</div>
-									<div class="card-body">
-										<p>Description: This is the fourth approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 5
-									</div>
-									<div class="card-body">
-										<p>Description: This is the fifth approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 mb-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 6
-									</div>
-									<div class="card-body">
-										<p>Description: This is the sixth approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card mb-4">
-									<div class="card-header">
-										Workflow 7
-									</div>
-									<div class="card-body">
-										<p>Description: This is the seventh approval workflow.</p>
-										<p>Status: Active</p>
-										<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#workflowModal1">View Details</button>
-									</div>
-								</div>
-							</div>
-							<!-- Add more workflow cards here -->
+						<div class="table-responsive">
+							<table class="table table-bordered table-striped">
+								<thead>
+									<tr>
+										<th>Received Date</th>
+										<th>Supplier Name</th>
+										<th>Product Name</th>
+										<th>Quantity Received</th>
+										<th>Received By</th>
+										<th>Quality Control</th>
+										<th>Accept/Reject</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- Dummy Data Rows -->
+									<tr>
+										<td>Sep 10, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier A</a></td>
+										<td>Product X</td>
+										<td>100 units</td>
+										<td>John Doe</td>
+										<td><input type="checkbox" name="qualityControl1"></td>
+										<td>
+											<select name="acceptReject1">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Sep 12, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier B</a></td>
+										<td>Product Y</td>
+										<td>50 units</td>
+										<td>Jane Smith</td>
+										<td><input type="checkbox" name="qualityControl2"></td>
+										<td>
+											<select name="acceptReject2">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier C</a></td>
+										<td>Product Z</td>
+										<td>75 units</td>
+										<td>Mike Johnson</td>
+										<td><input type="checkbox" name="qualityControl3"></td>
+										<td>
+											<select name="acceptReject3">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+									<!-- Dummy Data Row 4 -->
+									<tr>
+										<td>Oct 1, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier D</a></td>
+										<td>Product P</td>
+										<td>80 units</td>
+										<td>Lisa Brown</td>
+										<td><input type="checkbox" name="qualityControl4"></td>
+										<td>
+											<select name="acceptReject4">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 5 -->
+									<tr>
+										<td>Oct 5, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier E</a></td>
+										<td>Product Q</td>
+										<td>120 units</td>
+										<td>David Wilson</td>
+										<td><input type="checkbox" name="qualityControl5"></td>
+										<td>
+											<select name="acceptReject5">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 6 -->
+									<tr>
+										<td>Oct 10, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier F</a></td>
+										<td>Product R</td>
+										<td>90 units</td>
+										<td>Susan Davis</td>
+										<td><input type="checkbox" name="qualityControl6"></td>
+										<td>
+											<select name="acceptReject6">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 7 -->
+									<tr>
+										<td>Oct 15, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier G</a></td>
+										<td>Product S</td>
+										<td>60 units</td>
+										<td>Michael Smith</td>
+										<td><input type="checkbox" name="qualityControl7"></td>
+										<td>
+											<select name="acceptReject7">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 8 -->
+									<tr>
+										<td>Oct 20, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier H</a></td>
+										<td>Product T</td>
+										<td>75 units</td>
+										<td>Linda Johnson</td>
+										<td><input type="checkbox" name="qualityControl8"></td>
+										<td>
+											<select name="acceptReject8">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 9 -->
+									<tr>
+										<td>Oct 25, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier I</a></td>
+										<td>Product U</td>
+										<td>110 units</td>
+										<td>James Wilson</td>
+										<td><input type="checkbox" name="qualityControl9"></td>
+										<td>
+											<select name="acceptReject9">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 10 -->
+									<tr>
+										<td>Oct 30, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier J</a></td>
+										<td>Product V</td>
+										<td>85 units</td>
+										<td>Karen Davis</td>
+										<td><input type="checkbox" name="qualityControl10"></td>
+										<td>
+											<select name="acceptReject10">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 11 -->
+									<tr>
+										<td>Nov 5, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier K</a></td>
+										<td>Product W</td>
+										<td>95 units</td>
+										<td>Robert Smith</td>
+										<td><input type="checkbox" name="qualityControl11"></td>
+										<td>
+											<select name="acceptReject11">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 12 -->
+									<tr>
+										<td>Nov 10, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier L</a></td>
+										<td>Product X</td>
+										<td>70 units</td>
+										<td>Mary Johnson</td>
+										<td><input type="checkbox" name="qualityControl12"></td>
+										<td>
+											<select name="acceptReject12">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 13 -->
+									<tr>
+										<td>Nov 15, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier M</a></td>
+										<td>Product Y</td>
+										<td>50 units</td>
+										<td>John Wilson</td>
+										<td><input type="checkbox" name="qualityControl13"></td>
+										<td>
+											<select name="acceptReject13">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 14 -->
+									<tr>
+										<td>Nov 20, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier N</a></td>
+										<td>Product Z</td>
+										<td>65 units</td>
+										<td>Susan Smith</td>
+										<td><input type="checkbox" name="qualityControl14"></td>
+										<td>
+											<select name="acceptReject14">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Dummy Data Row 15 -->
+									<tr>
+										<td>Nov 25, 2023</td>
+										<td><a href="#" data-toggle="modal" data-target="#orderModal">Supplier O</a></td>
+										<td>Product A</td>
+										<td>45 units</td>
+										<td>Michael Johnson</td>
+										<td><input type="checkbox" name="qualityControl15"></td>
+										<td>
+											<select name="acceptReject15">
+												<option value="accept">Accept</option>
+												<option value="reject">Reject</option>
+											</select>
+										</td>
+									</tr>
+
+									<!-- Add more dummy data rows here -->
+								</tbody>
+							</table>
 						</div>
 					</div>
 					<!-- /.card-body -->
@@ -523,114 +686,50 @@
     </section>
     <!-- /.content -->
 
-	<div class="modal fade" id="workflowModal1" tabindex="-1" role="dialog" aria-labelledby="workflowModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-xl" role="document">
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="orderModal1Label">Order Details - ORD001</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<!-- Order details for ORD001 -->
+				<p>Order Number: ORD001</p>
+				<p>Customer Name: Customer A</p>
+				<p>Status: Completed</p>
+				<p>Order Date: Sep 5, 2023</p>
+				<p>Payment Method: Credit Card</p>
+				<p>Shipping Address: 123 Main St, City A</p>
+				<!-- Add more order details here -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="orderDetailsModal" tabindex="-1" role="dialog" aria-labelledby="orderDetailsModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="workflowModalLabel">Workflow Details</h5>
+					<h5 class="modal-title" id="orderDetailsModalLabel">Order Details</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					<p>Description: This is the static content for Workflow.</p>
-					<p>Status: Active</p>
-	
-					<!-- Request List for Workflow 2 (Static Data) -->
-					<!-- Request List for Workflow 2 (Static Data) -->
-					<h2>Requests for Workflow</h2>
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<th>Requester</th>
-								<th>Type</th>
-								<th>Date Submitted</th>
-								<th>Status</th>
-								<th>Action</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>John Doe</td>
-								<td>Purchase Order</td>
-								<td>2023-01-15</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Jane Smith</td>
-								<td>Expense Report</td>
-								<td>2023-02-20</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Robert Johnson</td>
-								<td>Inventory Restocking</td>
-								<td>2023-03-05</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Susan White</td>
-								<td>Shipment Release</td>
-								<td>2023-04-10</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Michael Brown</td>
-								<td>Equipment Maintenance</td>
-								<td>2023-05-15</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>Linda Davis</td>
-								<td>Inventory Disposal</td>
-								<td>2023-06-20</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<tr>
-								<td>William Clark</td>
-								<td>Warehouse Access</td>
-								<td>2023-07-25</td>
-								<td>Pending</td>
-								<td>
-									<button class="btn btn-primary btn-sm">View Details</button>
-									<button class="btn btn-success btn-sm">Approve</button>
-									<button class="btn btn-danger btn-sm">Reject</button>
-								</td>
-							</tr>
-							<!-- Add more request rows for Workflow 2 here (Static Data) -->
-						</tbody>
-					</table>
-
+					<!-- Add order details here -->
+					<p><strong>Order Number:</strong> ORD001</p>
+					<p><strong>Customer Name:</strong> Customer A</p>
+					<p><strong>Status:</strong> Completed</p>
+					<p><strong>Order Date:</strong> Sep 5, 2023</p>
+					<p><strong>Payment Method:</strong> Credit Card</p>
+					<p><strong>Shipping Address:</strong> 123 Main St, City A</p>
+					<!-- Add more order details as needed -->
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -638,7 +737,6 @@
 			</div>
 		</div>
 	</div>
-	
 
 
   </div>

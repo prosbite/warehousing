@@ -3,7 +3,7 @@ version: v3.2
 description: AdminLTE v3.2 Documentation
 
 baseurl: /docs/3.2
-url: https://adminlte.io
+url: https://SIGMA
 
 plugins:
   - jekyll-seo-tag
